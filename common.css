@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+	text-shadow: 1px 1px 10px black, 1px 0 0 black;
+	color: white;
+	font-size: 30px;
+}
+#screen {
+	height: 543px;
+	position: relative;
+	overflow: hidden;
+}
+#pause {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: relative;
+	z-index: 2;
+	opacity: 50%;
+}
+#bg {
+	height: 543px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(img/background.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+}
+#hero {
+    position: absolute;
+    top: 347px;
+    left: 50px;
+    height: 127px;
+	background: rgb(24,158,49);
+	background: linear-gradient(90deg, rgba(24,158,49,1) 0%, rgba(24,144,64,1) 100%, rgba(91,0,5,1) 100%);
+	background-image: url(img/hero.png);
+	border-radius: 3px 3px 0 0;
+	z-index: 1;
+}
+.monster {
+	width: 80px;
+	height: 150px;
+	position: absolute;
+	top: 326px;
+	background-image: url(img/monster.png);
+	border-radius: 3px 3px 0 0;
+	background-size: contain;
+}
+#health {
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	height: 30px;
+	outline: 1px solid red;
+	top: 20px;
+	left: 20px;
+	background: rgb(198,11,11);
+	background: linear-gradient(90deg, rgba(198,11,11,1) 0%, rgba(184,0,0,1) 100%, rgba(122,122,144,1) 100%);
+}
+#magic {
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	height: 10px;
+	outline: 1px solid blue;
+	top: 35px;
+	left: 20px;
+	background: rgb(44,73,175);
+	background: linear-gradient(90deg, rgba(44,73,175,1) 0%, rgba(11,34,126,1) 100%, rgba(91,0,5,1) 100%);
+	display: none;
+}
+#timer {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 33px;
+}
+.arrow {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+	background: rgb(55,0,0);
+	background: linear-gradient(90deg, rgba(55,0,0,1) 0%, rgba(91,0,5,1) 100%, rgba(17,0,3,1) 100%);
+    top: 413px;
+	border-radius: 0 2px 2px 0;
+	left: 100px;
+}
+.monster-width {
+	width: 100px;
+	height: 5px;
+	background: rgb(255,35,35);
+	background: linear-gradient(90deg, rgba(255,35,35,1) 0%, rgba(214,15,26,1) 90%, rgba(196,0,40,1) 100%);
+	position: absolute;
+	top: -15px;
+	border: 1px solid red;
+}
+#user {
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+	left: 20px;
+}
+#dead-monster-counter {
+	position: absolute;
+	z-index: 1;
+	top: 90px;
+	left: 20px;
+}
+#menu, #results {
+	position: absolute;
+	z-index: 3;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(122,122,144,1) 100%, rgba(0,212,255,1) 100%);
+	padding: 0 10px 10px 10px;
+	border-radius: 3px;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 900px;
+}
+#menu {
+	width: 100%;
+}
+#menu > div {
+	padding-left: 555px;
+}
+#menu > div, #results > div {
+	padding-left: 610px;
+	margin-top: 100px;
+}
+#menu button, #results input[type=submit] {
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(50,50,50,1) 100%, rgba(122,122,144,1) 100%);
+	border: none;
+	padding: 3px 15px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px black, 0 0 0 #eaeaea;
+}
+#menu input {
+	background: rgb(130,130,130);
+	background: linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%, rgba(122,122,144,1) 100%);
+	border: none;
+	padding: 4px;
+	border-radius: 3px;
+}
+#results {
+	width: 100%;
+}
+#instruction  {
+	z-index: 1;
+	position: absolute;
+	right:10px;
+	top: 50px;
+}
